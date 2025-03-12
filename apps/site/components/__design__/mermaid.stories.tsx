@@ -12,11 +12,11 @@ type Meta = MetaObj<Props>;
 export const Mermaid: Story = {
   args: {
     children: dedent`\`\`\`mermaid
-graph LR
-A[Client] --> B(Load Balancer)
-B --> C{Server 1}
-B --> D{Server 2}
-\`\`\``,
+                    graph LR
+                    A[Client] --> B(Load Balancer)
+                    B --> C{Server 1}
+                    B --> D{Server 2}
+                    \`\`\``,
   },
 };
 
