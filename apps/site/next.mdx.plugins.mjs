@@ -17,7 +17,7 @@ import rehypeShikiji from './next.mdx.shiki.mjs';
 export const REHYPE_PLUGINS = [
   // Transforms Mermaid code blocks into SVGs
   // note: needs to be imported before rehype-shiki to prevent transforming into code-blocks
-  rehypeMermaid,
+  [rehypeMermaid, { strategy: 'inline-svg', dark: true }],
   // Generates `id` attributes for headings (H1, ...)
   rehypeSlug,
   // Automatically add anchor links to headings (H1, ...)
