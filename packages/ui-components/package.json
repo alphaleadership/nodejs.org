@@ -10,7 +10,7 @@
     "storybook": "cross-env NODE_NO_WARNINGS=1 storybook dev -p 6006 --quiet --no-open",
     "storybook:build": "cross-env NODE_NO_WARNINGS=1 storybook build --quiet --webpack-stats-json",
     "test:unit": "cross-env NODE_NO_WARNINGS=1 node --experimental-test-coverage --test-coverage-exclude=**/*.test.* --enable-source-maps --import=global-jsdom/register --import=tsx --import=../../tests/setup.mjs --test **/*.test.*",
-    "test:unit:watch": "cross-env NODE_OPTIONS=\"--watch\" npm run test:unit",
+    "test:unit:watch": "cross-env NODE_OPTIONS=\"--watch\" pnpm test:unit",
     "test": "turbo test:unit"
   },
   "engines": {
@@ -33,7 +33,7 @@
     "tailwindcss": "~4.0.17"
   },
   "devDependencies": {
-    "@node-core/website-i18n": "*",
+    "@node-core/website-i18n": "workspace: *",
     "@storybook/addon-controls": "^8.6.12",
     "@storybook/addon-interactions": "^8.6.12",
     "@storybook/addon-styling-webpack": "^1.0.1",
