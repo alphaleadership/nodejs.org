@@ -12,7 +12,7 @@
   "exports": {
     ".": "./lib/index.mjs",
     "./config.json": "./config.json",
-    "./locales/*": "./locales/*.json"
+    "./locales/*.json": "./locales/*.json"
   },
   "scripts": {
     "build": "tsc --declaration --emitDeclarationOnly",
