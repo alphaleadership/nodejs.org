@@ -371,6 +371,9 @@ importers:
       cross-env:
         specifier: 7.0.3
         version: 7.0.3
+      css-loader:
+        specifier: ~6.11.0
+        version: 6.11.0(webpack@5.99.5(@swc/core@1.11.20)(esbuild@0.25.2))
       eslint-plugin-react:
         specifier: ~7.37.4
         version: 7.37.5(eslint@9.23.0(jiti@2.4.2))
@@ -380,9 +383,15 @@ importers:
       global-jsdom:
         specifier: ^26.0.0
         version: 26.0.0(jsdom@26.1.0)
+      postcss-loader:
+        specifier: ~8.1.1
+        version: 8.1.1(postcss@8.5.3)(typescript@5.8.3)(webpack@5.99.5(@swc/core@1.11.20)(esbuild@0.25.2))
       storybook:
         specifier: ^8.6.11
         version: 8.6.12(prettier@3.5.3)
+      style-loader:
+        specifier: ~3.3.4
+        version: 3.3.4(webpack@5.99.5(@swc/core@1.11.20)(esbuild@0.25.2))
       stylelint:
         specifier: ^16.17.0
         version: 16.17.0(typescript@5.8.3)
@@ -11473,6 +11482,17 @@ snapshots:
       postcss: 8.5.3
       postcss-selector-parser: 7.1.0
       postcss-value-parser: 4.2.0
+
+  postcss-loader@8.1.1(postcss@8.5.3)(typescript@5.8.3)(webpack@5.99.5(@swc/core@1.11.20)(esbuild@0.25.2)):
+    dependencies:
+      cosmiconfig: 9.0.0(typescript@5.8.3)
+      jiti: 1.21.7
+      postcss: 8.5.3
+      semver: 7.7.1
+    optionalDependencies:
+      webpack: 5.99.5(@swc/core@1.11.20)(esbuild@0.25.2)
+    transitivePeerDependencies:
+      - typescript
 
   postcss-loader@8.1.1(postcss@8.5.3)(typescript@5.8.3)(webpack@5.99.5):
     dependencies:
