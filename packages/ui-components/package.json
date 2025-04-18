@@ -5,7 +5,8 @@
     "Common",
     "Containers",
     "Icons",
-    "styles"
+    "styles",
+    "types.ts"
   ],
   "exports": {
     "./Common/*": "./Common/*",
@@ -14,9 +15,11 @@
     "./Containers/*/*": "./Containers/*/*",
     "./Icons/*": "./Icons/*",
     "./Icons/*/*": "./Icons/*/*",
-    "./styles/*": "./styles/*"
+    "./styles/*": "./styles/*",
+    "./types": "./types.ts"
   },
   "scripts": {
+    "build": "tsc --declaration --emitDeclarationOnly",
     "check-types": "tsc --noEmit",
     "lint:js": "eslint \"**/*.{js,mjs,ts,tsx}\"",
     "lint:css": "stylelint \"**/*.css\" --allow-empty-input --cache --cache-strategy=content --cache-location=.stylelintcache",
@@ -55,6 +58,7 @@
     "@storybook/addon-themes": "^8.6.12",
     "@storybook/addon-viewport": "^8.6.12",
     "@storybook/addon-webpack5-compiler-swc": "^3.0.0",
+    "@storybook/react": "^8.6.12",
     "@storybook/react-webpack5": "^8.6.12",
     "@testing-library/user-event": "~14.6.1",
     "cross-env": "7.0.3",
