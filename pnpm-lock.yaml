@@ -208,6 +208,9 @@ importers:
       '@eslint/compat':
         specifier: ~1.2.8
         version: 1.2.8(eslint@9.23.0(jiti@2.4.2))
+      '@eslint/eslintrc':
+        specifier: ~3.3.1
+        version: 3.3.1
       '@next/eslint-plugin-next':
         specifier: 15.2.4
         version: 15.2.4
@@ -274,6 +277,9 @@ importers:
       typescript-eslint:
         specifier: ~8.29.0
         version: 8.29.1(eslint@9.23.0(jiti@2.4.2))(typescript@5.8.3)
+      unified:
+        specifier: 11.0.5
+        version: 11.0.5
       user-agent-data-types:
         specifier: 0.4.2
         version: 0.4.2
