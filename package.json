@@ -33,7 +33,7 @@
     "prettier:fix": "pnpm prettier --write",
     "format": "pnpm lint:fix && pnpm prettier:fix",
     "test": "turbo test:unit",
-    "test:ci": "cross-env NODE_OPTIONS=\"--test-reporter=lcov --test-reporter-destination=lcov.info --test-reporter=junit --test-reporter-destination=junit.xml --test-reporter=@reporters/github --test-reporter-destination=stdout --test-reporter=spec --test-reporter-destination=stdout\" turbo test:unit",
+    "test:ci": "pnpm exec cross-env NODE_OPTIONS=\"--test-reporter=lcov --test-reporter-destination=lcov.info --test-reporter=junit --test-reporter-destination=junit.xml --test-reporter=@reporters/github --test-reporter-destination=stdout --test-reporter=spec --test-reporter-destination=stdout\" turbo test:unit",
     "prepare": "husky"
   },
   "dependencies": {
@@ -49,6 +49,7 @@
     "@types/node": "22.14.0",
     "@types/react": "^19.1.0",
     "@types/react-dom": "^19.1.1",
+    "cross-env": "7.0.3",
     "eslint": "~9.23.0",
     "eslint-plugin-import-x": "~4.10.0",
     "eslint-plugin-no-relative-import-paths": "~1.6.1",
