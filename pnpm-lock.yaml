@@ -389,6 +389,9 @@ importers:
       postcss-loader:
         specifier: ~8.1.1
         version: 8.1.1(postcss@8.5.3)(typescript@5.8.3)(webpack@5.99.5(@swc/core@1.11.20)(esbuild@0.25.2))
+      react:
+        specifier: 19.1.0
+        version: 19.1.0
       storybook:
         specifier: ^8.6.11
         version: 8.6.12(prettier@3.5.3)
