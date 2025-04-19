@@ -21,16 +21,15 @@
     "./stylelint/*": "./stylelint/*"
   },
   "scripts": {
-    "build": "tsc --declaration --emitDeclarationOnly",
     "check-types": "tsc --noEmit",
     "lint:js": "eslint \"**/*.{js,mjs,ts,tsx}\"",
     "lint:css": "stylelint \"**/*.css\" --allow-empty-input --cache --cache-strategy=content --cache-location=.stylelintcache",
     "lint": "turbo run lint:js lint:css",
     "lint:fix": "turbo run lint:js lint:css --no-cache -- --fix",
-    "storybook": "pnpm exec cross-env NODE_NO_WARNINGS=1 storybook dev -p 6006 --quiet",
-    "storybook:build": "pnpm exec cross-env NODE_NO_WARNINGS=1 storybook build --quiet --webpack-stats-json",
-    "test:unit": "pnpm exec cross-env NODE_NO_WARNINGS=1 node --experimental-test-coverage --test-coverage-exclude=**/*.test.* --enable-source-maps --import=global-jsdom/register --import=tsx --import=../../tests/setup.mjs --test **/*.test.*",
-    "test:unit:watch": "pnpm exec cross-env NODE_OPTIONS=\"--watch\" pnpm test:unit",
+    "storybook": "cross-env NODE_NO_WARNINGS=1 storybook dev -p 6006 --quiet",
+    "storybook:build": "cross-env NODE_NO_WARNINGS=1 storybook build --quiet --webpack-stats-json",
+    "test:unit": "cross-env NODE_NO_WARNINGS=1 node --experimental-test-coverage --test-coverage-exclude=**/*.test.* --enable-source-maps --import=global-jsdom/register --import=tsx --import=../../tests/setup.mjs --test **/*.test.*",
+    "test:unit:watch": "cross-env NODE_OPTIONS=\"--watch\" pnpm test:unit",
     "test": "turbo test:unit"
   },
   "engines": {

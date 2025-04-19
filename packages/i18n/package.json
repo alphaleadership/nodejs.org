@@ -20,7 +20,6 @@
     }
   },
   "scripts": {
-    "build": "tsc --declaration --emitDeclarationOnly",
     "lint:js": "eslint \"**/*.{js,mjs,ts}\""
   },
   "devDependencies": {

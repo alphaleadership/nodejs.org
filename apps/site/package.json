@@ -2,12 +2,12 @@
   "name": "@node-core/website",
   "type": "module",
   "scripts": {
-    "scripts:release-post": "pnpm exec cross-env NODE_NO_WARNINGS=1 node scripts/release-post/index.mjs",
-    "dev": "pnpm exec cross-env NODE_NO_WARNINGS=1 next dev",
+    "scripts:release-post": "cross-env NODE_NO_WARNINGS=1 node scripts/release-post/index.mjs",
+    "dev": "cross-env NODE_NO_WARNINGS=1 next dev",
     "serve": "pnpm dev",
-    "build": "pnpm exec cross-env NODE_NO_WARNINGS=1 next build --turbopack",
-    "start": "pnpm exec cross-env NODE_NO_WARNINGS=1 next start",
-    "deploy": "pnpm exec cross-env NEXT_PUBLIC_STATIC_EXPORT=true NODE_NO_WARNINGS=1 next build",
+    "build": "cross-env NODE_NO_WARNINGS=1 next build --turbopack",
+    "start": "cross-env NODE_NO_WARNINGS=1 next start",
+    "deploy": "cross-env NEXT_PUBLIC_STATIC_EXPORT=true NODE_NO_WARNINGS=1 next build",
     "check-types": "tsc --noEmit",
     "lint:js": "eslint \"**/*.{js,mjs,ts,tsx}\"",
     "lint:snippets": "node ./scripts/lint-snippets/index.mjs",
@@ -16,8 +16,8 @@
     "lint": "turbo run lint:md lint:snippets lint:js lint:css",
     "lint:fix": "turbo run lint:md lint:js lint:css --no-cache -- --fix",
     "sync-orama": "node ./scripts/orama-search/sync-orama-cloud.mjs",
-    "test:unit": "pnpm exec cross-env NODE_NO_WARNINGS=1 node --experimental-test-coverage --test-coverage-exclude=**/*.test.* --experimental-test-module-mocks --enable-source-maps --import=global-jsdom/register --import=tsx --import=tests/setup.jsx --test **/*.test.*",
-    "test:unit:watch": "pnpm exec cross-env NODE_OPTIONS=\"--watch\" npm run test:unit",
+    "test:unit": "cross-env NODE_NO_WARNINGS=1 node --experimental-test-coverage --test-coverage-exclude=**/*.test.* --experimental-test-module-mocks --enable-source-maps --import=global-jsdom/register --import=tsx --import=tests/setup.jsx --test **/*.test.*",
+    "test:unit:watch": "cross-env NODE_OPTIONS=\"--watch\" npm run test:unit",
     "test": "turbo test:unit"
   },
   "dependencies": {
@@ -68,7 +68,8 @@
     "tailwindcss": "~4.0.17",
     "unist-util-visit": "~5.0.0",
     "vfile": "~6.0.3",
-    "vfile-matter": "~5.0.1"
+    "vfile-matter": "~5.0.1",
+    "cross-env": "7.0.3"
   },
   "devDependencies": {
     "@eslint/compat": "~1.2.8",
@@ -76,7 +77,6 @@
     "@next/eslint-plugin-next": "15.2.4",
     "@testing-library/user-event": "~14.6.1",
     "@types/semver": "~7.7.0",
-    "cross-env": "7.0.3",
     "eslint-config-next": "15.2.4",
     "eslint-import-resolver-typescript": "~4.3.1",
     "eslint-plugin-mdx": "~3.4.0",
