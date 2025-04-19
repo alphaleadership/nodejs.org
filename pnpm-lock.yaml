@@ -247,8 +247,32 @@ importers:
       remark-frontmatter:
         specifier: 5.0.0
         version: 5.0.0
+      remark-lint-fenced-code-flag:
+        specifier: ^4.2.0
+        version: 4.2.0
+      remark-lint-first-heading-level:
+        specifier: ^4.0.1
+        version: 4.0.1
+      remark-lint-maximum-line-length:
+        specifier: ^4.1.1
+        version: 4.1.1
+      remark-lint-no-file-name-articles:
+        specifier: ^3.0.1
+        version: 3.0.1
+      remark-lint-no-literal-urls:
+        specifier: ^4.0.1
+        version: 4.0.1
+      remark-lint-no-undefined-references:
+        specifier: ^5.0.2
+        version: 5.0.2
+      remark-lint-no-unused-definitions:
+        specifier: ^4.0.2
+        version: 4.0.2
+      remark-lint-prohibited-strings:
+        specifier: ^4.0.0
+        version: 4.0.0
       remark-lint-unordered-list-marker-style:
-        specifier: 4.0.1
+        specifier: ^4.0.1
         version: 4.0.1
       remark-parse:
         specifier: 11.0.0
