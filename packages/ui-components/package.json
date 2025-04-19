@@ -6,7 +6,8 @@
     "Containers",
     "Icons",
     "styles",
-    "types.ts"
+    "types.ts",
+    "stylelint"
   ],
   "exports": {
     "./Common/*": "./Common/*",
@@ -16,7 +17,8 @@
     "./Icons/*": "./Icons/*",
     "./Icons/*/*": "./Icons/*/*",
     "./styles/*": "./styles/*",
-    "./types": "./types.ts"
+    "./types": "./types.ts",
+    "./stylelint/*": "./stylelint/*"
   },
   "scripts": {
     "build": "tsc --declaration --emitDeclarationOnly",

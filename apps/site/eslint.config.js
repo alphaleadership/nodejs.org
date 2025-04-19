@@ -39,7 +39,7 @@ export default tseslint.config(
   },
   {
     files: ['**/*.{md,mdx}'],
-    extends: [mdx.configs.flat],
+    extends: [mdx.flat],
     rules: {
       'no-irregular-whitespace': 'off',
       '@next/next/no-img-element': 'off',

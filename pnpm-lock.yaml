@@ -227,8 +227,8 @@ importers:
         specifier: ~4.3.1
         version: 4.3.2(eslint-plugin-import-x@4.10.3(eslint@9.23.0(jiti@2.4.2))(typescript@5.8.3))(eslint-plugin-import@2.31.0)(eslint@9.23.0(jiti@2.4.2))
       eslint-plugin-mdx:
-        specifier: ~3.3.1
-        version: 3.3.2(eslint@9.23.0(jiti@2.4.2))(remark-lint-file-extension@3.0.1)
+        specifier: ~3.4.0
+        version: 3.4.0(eslint@9.23.0(jiti@2.4.2))(remark-lint-file-extension@3.0.1)
       eslint-plugin-react:
         specifier: ~7.37.4
         version: 7.37.5(eslint@9.23.0(jiti@2.4.2))
@@ -247,6 +247,9 @@ importers:
       remark-frontmatter:
         specifier: 5.0.0
         version: 5.0.0
+      remark-lint-unordered-list-marker-style:
+        specifier: 4.0.1
+        version: 4.0.1
       remark-parse:
         specifier: 11.0.0
         version: 11.0.0
@@ -3324,8 +3327,8 @@ packages:
     peerDependencies:
       eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8 || ^9
 
-  eslint-plugin-mdx@3.3.2:
-    resolution: {integrity: sha512-zBvxCiKzahbTRvWPONDZups1As5clGjv1OLOLnX/p+OwdrZdcwJ3tiBihu6xeZuem9u6iwMkr9kHVurcuzbTCg==}
+  eslint-plugin-mdx@3.4.0:
+    resolution: {integrity: sha512-f/ot8rSp/telkW1joqe0y9XQigTrE99sQHqyqLYYVgGLtQvl54suDidepbiGsDF7Z5V9uyQPWpmY0Qu/ZMRzmg==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       eslint: '>=8.0.0'
@@ -9441,11 +9444,13 @@ snapshots:
       safe-regex-test: 1.1.0
       string.prototype.includes: 2.0.1
 
-  eslint-plugin-mdx@3.3.2(eslint@9.23.0(jiti@2.4.2))(remark-lint-file-extension@3.0.1):
+  eslint-plugin-mdx@3.4.0(eslint@9.23.0(jiti@2.4.2))(remark-lint-file-extension@3.0.1):
     dependencies:
       eslint: 9.23.0(jiti@2.4.2)
       eslint-mdx: 3.4.0(eslint@9.23.0(jiti@2.4.2))(remark-lint-file-extension@3.0.1)
       mdast-util-from-markdown: 2.0.2
+      mdast-util-mdx: 3.0.0
+      micromark-extension-mdxjs: 3.0.0
       remark-mdx: 3.1.0
       remark-parse: 11.0.0
       remark-stringify: 11.0.0
