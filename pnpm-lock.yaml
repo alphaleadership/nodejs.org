@@ -48,9 +48,6 @@ importers:
       eslint-plugin-import-x:
         specifier: ~4.10.0
         version: 4.10.3(eslint@9.23.0(jiti@2.4.2))(typescript@5.8.3)
-      eslint-plugin-no-relative-import-paths:
-        specifier: ~1.6.1
-        version: 1.6.1
       prettier:
         specifier: 3.5.3
         version: 3.5.3
@@ -3332,9 +3329,6 @@ packages:
     engines: {node: '>=18.0.0'}
     peerDependencies:
       eslint: '>=8.0.0'
-
-  eslint-plugin-no-relative-import-paths@1.6.1:
-    resolution: {integrity: sha512-YZNeOnsOrJcwhFw0X29MXjIzu2P/f5X2BZDPWw1R3VUYBRFxNIh77lyoL/XrMU9ewZNQPcEvAgL/cBOT1P330A==}
 
   eslint-plugin-react-hooks@5.2.0:
     resolution: {integrity: sha512-+f15FfK64YQwZdJNELETdn5ibXEUQmW1DZL6KXhNnc2heoy/sg9VJJeT7n8TlMWouzWqSWavFkIhHyIbIAEapg==}
@@ -9463,8 +9457,6 @@ snapshots:
       - bluebird
       - remark-lint-file-extension
       - supports-color
-
-  eslint-plugin-no-relative-import-paths@1.6.1: {}
 
   eslint-plugin-react-hooks@5.2.0(eslint@9.23.0(jiti@2.4.2)):
     dependencies:

@@ -56,12 +56,6 @@ export default tseslint.config(
     },
   },
   {
-    files: ['.storybook/**', '**/*.mjs', '**/*.test.*'],
-    rules: {
-      'no-relative-import-paths/no-relative-import-paths': 'off',
-    },
-  },
-  {
     files: ['components/**/*.stories.tsx'],
     extends: [...storybook.configs['flat/recommended']],
   }
