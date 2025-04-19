@@ -64,10 +64,10 @@ importers:
         specifier: ^3.1.0
         version: 3.1.0(acorn@8.14.1)
       '@node-core/ui-components':
-        specifier: 'workspace: *'
+        specifier: workspace:*
         version: link:../../packages/ui-components
       '@node-core/website-i18n':
-        specifier: 'workspace: *'
+        specifier: workspace:*
         version: link:../../packages/i18n
       '@nodevu/core':
         specifier: 0.3.0

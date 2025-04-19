@@ -9,17 +9,6 @@
     "types.ts",
     "stylelint"
   ],
-  "exports": {
-    "./Common/*": "./Common/*",
-    "./Common/*/*": "./Common/*/*",
-    "./Containers/*": "./Containers/*",
-    "./Containers/*/*": "./Containers/*/*",
-    "./Icons/*": "./Icons/*",
-    "./Icons/*/*": "./Icons/*/*",
-    "./styles/*": "./styles/*",
-    "./types": "./types.ts",
-    "./stylelint/*": "./stylelint/*"
-  },
   "scripts": {
     "build": "tsc --declaration --emitDeclarationOnly",
     "check-types": "tsc --noEmit",

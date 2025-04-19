@@ -10,15 +10,6 @@
     "config.json",
     "types.d.ts"
   ],
-  "exports": {
-    ".": "./lib/index.mjs",
-    "./config.json": "./config.json",
-    "./locales/*.json": "./locales/*.json",
-    "./types": {
-      "types": "./types.d.ts",
-      "default": "./types.d.ts"
-    }
-  },
   "scripts": {
     "build": "tsc --declaration --emitDeclarationOnly",
     "lint:js": "eslint \"**/*.{js,mjs,ts}\""
