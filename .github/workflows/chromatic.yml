@@ -27,10 +27,6 @@ permissions:
   contents: read
   actions: read
 
-env:
-  # See https://turbo.build/repo/docs/reference/command-line-reference/run#--force
-  TURBO_FORCE: true
-
 jobs:
   chromatic:
     # We only need to run Storybook Builds and Storybook Visual Regression Tests within Pull Requests that actually

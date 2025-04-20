@@ -22,6 +22,7 @@
   "scripts": {
     "dev": "turbo run dev",
     "build": "turbo run build",
+    "deploy": "turbo run deploy",
     "storybook": "turbo run storybook",
     "storybook:build": "turbo run storybook:build",
     "start": "turbo run start",
