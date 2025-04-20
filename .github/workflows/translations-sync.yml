@@ -108,12 +108,12 @@ jobs:
       - name: Install packages
         run: pnpm install
 
-      - name: Run `npx lint:md --fix`
+      - name: Run `lint:md --fix`
         # This runs a specific version of ESLint with only the Translation Pages Globbing
         # This avoid that unrelated changes get linted/modified within this PR
         run: pnpm exec eslint "apps/site/pages/**/*.md?(x)" --fix --cache --cache-strategy=metadata --cache-file=apps/site/.eslintmdcache --config=apps/site/eslint.config.js
 
-      - name: Run `npx prettier --write`
+      - name: Run `prettier --write`
         # This runs a specific version of Prettier with only the Translation Pages Globbing
         # This avoid that unrelated changes get prettied/modified within this PR
         run: pnpm exec prettier "apps/site/{pages,i18n}/**/*.{json,md,mdx}" --check --write --cache --cache-strategy=metadata --cache-location=apps/site/.prettiercache
