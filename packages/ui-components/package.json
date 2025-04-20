@@ -52,6 +52,8 @@
     "tailwindcss": "~4.0.17"
   },
   "devDependencies": {
+    "@types/react": "^19.1.0",
+    "@types/node": "22.14.0",
     "@node-core/website-i18n": "workspace: *",
     "@storybook/addon-controls": "^8.6.12",
     "@storybook/addon-interactions": "^8.6.12",

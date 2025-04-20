@@ -30,15 +30,6 @@ importers:
       '@testing-library/react':
         specifier: ~16.3.0
         version: 16.3.0(@testing-library/dom@10.4.0)(@types/react-dom@19.1.2(@types/react@19.1.1))(@types/react@19.1.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      '@types/node':
-        specifier: 22.14.0
-        version: 22.14.0
-      '@types/react':
-        specifier: ^19.1.0
-        version: 19.1.1
-      '@types/react-dom':
-        specifier: ^19.1.1
-        version: 19.1.2(@types/react@19.1.1)
       cross-env:
         specifier: 7.0.3
         version: 7.0.3
@@ -111,6 +102,12 @@ importers:
       '@tailwindcss/postcss':
         specifier: ~4.0.17
         version: 4.0.17
+      '@types/node':
+        specifier: 22.14.0
+        version: 22.14.0
+      '@types/react':
+        specifier: ^19.1.0
+        version: 19.1.1
       '@vcarl/remark-headings':
         specifier: ~0.1.0
         version: 0.1.0
@@ -395,6 +392,12 @@ importers:
       '@testing-library/user-event':
         specifier: ~14.6.1
         version: 14.6.1(@testing-library/dom@10.4.0)
+      '@types/node':
+        specifier: 22.14.0
+        version: 22.14.0
+      '@types/react':
+        specifier: ^19.1.0
+        version: 19.1.1
       cross-env:
         specifier: 7.0.3
         version: 7.0.3
@@ -8247,6 +8250,7 @@ snapshots:
   '@types/react-dom@19.1.2(@types/react@19.1.1)':
     dependencies:
       '@types/react': 19.1.1
+    optional: true
 
   '@types/react@19.1.1':
     dependencies:
